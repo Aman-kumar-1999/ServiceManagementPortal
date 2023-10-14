@@ -1,0 +1,48 @@
+<div class="container">
+
+
+    <div class="profile">
+                        
+        <mat-icon color="warn">account_circle</mat-icon>
+        <h3>{{this.login.getUser().firstName}}&nbsp;{{this.login.getUser().lastName}}</h3>
+        <!-- On tables -->
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">User Name</th>
+                    <th scope="col"></th>
+                    <th scope="col">{{this.login.getUser().userName}}</th>
+                  </tr>
+              <tr>
+                <th scope="col">DESIGNATION</th>
+                <th scope="col"></th>
+                <th scope="col">{{this.login.getUser().designation}}</th>
+              </tr>
+              <tr>
+                <th scope="col">EXPERIENCE</th>
+                <th scope="col"></th>
+                <th scope="col">{{this.login.getUser().experience}}</th>
+              </tr>
+              <tr>
+                <th scope="col">Email</th>
+                <th scope="col"></th>
+                <th scope="col">{{this.login.getUser().emailId}}</th>
+              </tr>
+              <tr>
+                <th scope="col">Phone No.</th>
+                <th scope="col"></th>
+                <th scope="col">{{this.login.getUser().contactNo}}</th>
+              </tr>
+              <tr>
+                <th scope="col">Role</th>
+                <th scope="col"></th>
+                <th scope="col">{{this.login.getUserRole()}}</th>
+              </tr>
+    
+    
+            </thead>
+          </table>
+    
+    
+    </div>
+</div>

@@ -1,0 +1,12 @@
+mat-icon{
+    /* color: red; */
+    font-size: 2rem;
+    height: 2rem;
+    width: 2rem;
+    margin-right: .5rem;
+}
+.cus-snackebar{
+    display: flex;
+    color: red;
+    align-items: center;
+}

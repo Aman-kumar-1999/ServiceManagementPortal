@@ -1,0 +1,22 @@
+<mat-toolbar class="tool" color="dark">
+    <div class="back"><img src="../../../assets/SPYDER BUSINESS (RGB)_REV-01.png" /></div>
+</mat-toolbar>
+<div class="container">
+
+    <div class="header">
+        <a mat-button class="a1" routerLink="vsm-tsm-my-account"><mat-icon color="warn">home</mat-icon> HOME</a>
+
+        <a mat-button (click)="logout()"><mat-icon color="warn">logout</mat-icon> LOGOUT</a>
+        <br>
+        <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Welcome {{this.login.getUser().userName}}</h4>
+
+
+    </div>
+    
+
+    <div class="navbar">
+        <app-vsm-tsm-navebase></app-vsm-tsm-navebase>
+    </div>
+
+
+</div>

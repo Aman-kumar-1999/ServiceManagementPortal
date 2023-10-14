@@ -1,0 +1,22 @@
+<mat-toolbar class="tool" color="dark">
+    <div class="back"><img src="../../../assets/SPYDER BUSINESS (RGB)_REV-01.png" /></div>
+</mat-toolbar>
+<div class="container">
+
+    <div class="header">
+        <a class="a1" mat-button routerLink="app-circle-my-account"><mat-icon color="warn">home</mat-icon> HOME</a>
+        
+        <a mat-button  (click)="logout()"><mat-icon color="warn">logout</mat-icon> LOGOUT</a>
+        <!-- <hr> -->
+        <h4>&nbsp; Welcome {{this.login.getUser().userName}}</h4>
+
+
+    </div>
+    <div class="navbar">
+       <app-admin-navebar></app-admin-navebar>
+
+    </div>
+
+
+
+</div>

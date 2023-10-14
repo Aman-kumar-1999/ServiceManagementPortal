@@ -1,0 +1,66 @@
+.example-spacer {
+    flex: 1 1 auto;
+  
+}
+
+
+#NameHeader{
+    float: right;
+    /* float:inline-end; */
+    margin-top: 0px;
+    border: 2px solid black;
+}
+.back{
+    width: 10%;
+    height: 110%;
+    display: flex;
+}
+
+.header{
+    float: right;
+    margin-top: 20px;
+    padding: 0px;
+    /* text-align: center; */
+}
+
+.example-button-row{
+    border-radius: 5px;
+    /* border-right: solid black; */
+}
+/* .mat-toolbar1{
+    margin-top: 10px; 
+    border-radius: 10px;
+    background-color: red;
+} */
+.tool{
+   background-color: black;
+}
+a:hover{
+    color: rgb(98, 212, 212);
+    
+}
+.a1{
+    border-right: 2px solid rgb(243, 221, 221);
+    
+    
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+a{
+    border-bottom: 2px solid rgb(243, 221, 221);;
+}
+.navbar{
+    display: flex;
+    /* position:relative */
+}
+h4{
+    text-align: center;
+}
+
+.mat-menu{
+    background-color: red;
+}
+.mat-menu:hover{
+    background-color: rgb(230, 110, 110);
+
+}

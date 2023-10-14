@@ -1,0 +1,73 @@
+<div class="wrapper">
+    <div class="container boder">
+        <div class="raw">
+            <h1 class="text-center">Customer Details</h1>
+            <div class="text-center">
+
+                
+                    <mat-spinner *ngIf="loaderService.isLoading | async" class="spinner" color="accent"></mat-spinner>
+
+
+                   
+                    <form (ngSubmit)="formSubmit()">
+
+                        <!-- {{user | json }} -->
+
+
+
+
+                        
+
+                            <mat-form-field >
+                                <mat-label>Select Status*</mat-label>
+                                <mat-select  >
+                                  <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              <mat-form-field >
+                                <mat-label>Select Segment*</mat-label>
+                                <mat-select  >
+                                  <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              <mat-form-field >
+                                <mat-label>Select Sub Segment*</mat-label>
+                                <mat-select  >
+                                  <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              <mat-form-field >
+                                <mat-label>Select Start Date</mat-label>
+                                <input  [(ngModel)]="s" required matInput name="date" type="date" class="form-control" id="date" placeholder="Enter Date" #input>
+                              </mat-form-field>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              <mat-form-field >
+                                <mat-label>Select End Date</mat-label>
+                                <input  [(ngModel)]="s" required matInput name="date" type="date" class="form-control" id="date" placeholder="Enter Date">
+                              
+                              </mat-form-field>
+                              
+
+                        
+                        
+
+                        
+                        <div class="text-center">
+                            <button style="margin-left: 30px;" mat-flat-button color="accent">Submit</button>
+                            <button type="reset" style="margin-left: 30px;" mat-flat-button color="warn">Clear</button>
+                        </div>
+                        
+                    </form>
+                
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+</div>

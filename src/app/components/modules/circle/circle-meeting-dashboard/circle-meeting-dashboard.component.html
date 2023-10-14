@@ -1,0 +1,51 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="raw">
+            <h1 class="text-center">Meeting Dashboard</h1>
+            <div class="col-md-5 boder">
+
+                <br>
+                <!-- <hr> -->
+                
+                <!-- <div class="chart-statistic-box">
+
+                    <div class="chart-container" id='calendar'></div>
+                </div> -->
+                
+                <div>
+                    <full-calendar  [options]="calendarOptions"></full-calendar>
+                   
+
+                </div>
+
+                   
+                
+
+            </div>
+            
+            <a class="col-md-3 offset-md-5 purple">
+                <div class="number">0</div>
+               <span >Assigned Customers</span>
+               <!-- <span > Assigned Circuits</span> -->
+             
+            </a>
+            <a class="col-md-3 offset-md-8 yello">
+                <div class="number1">1</div>
+                <span >Scheduled Meetings</span>
+            </a>
+            <a class="col-md-3 offset-md-5 green">
+                <div class="number">2</div>
+                <span>Completed Meetings</span>
+            </a>
+            <a class="col-md-3 offset-md-8 red">
+                <div class="number1">3</div>
+                <span>Cancelled Meetings</span>
+            </a>
+        </div>
+        <div style="margin-top: 10px;">
+            <app-circle-up-comming-meeting-in-week></app-circle-up-comming-meeting-in-week>
+        </div>
+        
+        
+    </div>
+</div>

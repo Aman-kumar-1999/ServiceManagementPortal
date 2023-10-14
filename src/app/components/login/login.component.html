@@ -1,0 +1,51 @@
+<div class="back"><img src="../../../assets/SPYDER BUSINESS (RGB)_REV-01.png"/></div>
+<div class="body">
+    <!-- <div class="col-1"><img src="../../../assets/SPYDER BUSINESS (RGB)_REV-01.png"/></div> -->
+    <div class="col-6"><label class="label1" for="chk" aria-hidden="true">
+        <!-- <img src="../../../assets/SPYDER BUSINESS (RGB)_REV-01.png"/> -->
+        Service Management Portal</label>
+        <p><b>Disclaimer:</b> This is an official computer system. It is for authorized users only. Unauthorized users are
+            prohibited. Users(authorize or unauthorized) have no explicit or implicit expectation of privacy. Any or all
+            users of this system may be subject to one or more of the following actions:auditing, inspection and
+            disclosing to security personnel and law enforcement personnel, as well as authorized officials of other
+            agencies. By using this system, the user consents to these actions. Unauthorized or improper use of this
+            system may result in administrative disciplinary action and civil and criminal penalties.By accessing this
+            system you indicate your awareness of and consent to these terms and conditions of use. Discontinue access
+            immediately if you do not agree to the conditions stated in this notice.</p>
+    </div>
+    
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+       
+        <div class="signup">
+            <form (ngSubmit)="formSubmit()">
+                <label class="label1" for="chk" aria-hidden="true">Smp Login</label>
+
+
+                <input [(ngModel)]="user.emailId" required="" name="emailId" type="text" id="emailId"
+                    placeholder="Enter Email Id">
+
+                <input [(ngModel)]="user.password" required="" name="password" type="password" id="password"
+                    placeholder="Password">
+                <button>Login</button>  
+                <button type="reset">Clear</button>
+                <mat-spinner *ngIf="loaderService.isLoading | async" class="spinner" color="accent"></mat-spinner>
+            </form>
+        </div>
+        
+
+        <div class="login">
+            
+            <form (ngSubmit)="forgetPassword()">
+                <label class="label2" for="chk" aria-hidden="true">Forget Password</label>
+                <input [(ngModel)]="email.recipient" type="email" name="email" placeholder="Email" required="">
+
+                <button>Reset Password</button>
+                <button type="reset">Clear</button>
+                <mat-spinner *ngIf="loaderService.isLoading | async" class="spinner" color="accent"></mat-spinner>
+            </form>
+        </div>
+       
+
+    </div>
+</div>
